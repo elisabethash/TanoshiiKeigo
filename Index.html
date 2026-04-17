@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TanoshiiKeigo - Belajar Bahasa Jepang Seru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Quicksand:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .jp-font {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .rainbow-gradient {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+        }
+
+        .card-pop:hover {
+            transform: scale(1.03) rotate(-1deg);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .bg-soft-yellow { background-color: #fef3c7; }
+        .bg-soft-blue { background-color: #dbeafe; }
+        .bg-soft-green { background-color: #d1fae5; }
+        .bg-soft-purple { background-color: #f3e8ff; }
+
+        .floating-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-indigo-50 text-slate-800">
+
+    <!-- Navigasi Ceria -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg border-b-4 border-amber-400">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-amber-400 text-white p-2 rounded-2xl shadow-md rotate-12">
+                    <i class="fas fa-laugh-beam text-2xl"></i>
+                </div>
+                <span class="font-bold text-2xl tracking-tighter text-indigo-900">Tanoshii<span class="text-rose-500">Keigo</span></span>
+            </div>
+            <div class="hidden md:flex space-x-6 font-bold text-indigo-900">
+                <a href="#pengenalan" class="hover:text-rose-500 transition">Halo!</a>
+                <a href="#materi" class="hover:text-rose-500 transition">Materi</a>
+                <a href="#contoh" class="hover:text-rose-500 transition">Contoh</a>
+                <a href="#tabel" class="hover:text-rose-500 transition">Daftar Kata</a>
+                <a href="#kuis" class="bg-amber-400 text-white px-4 py-1 rounded-full hover:bg-amber-500 transition">Main Kuis!</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Warna-Warni -->
+    <header class="rainbow-gradient text-white py-24 px-4 relative">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-block bg-white/20 backdrop-blur-md px-4 py-2 rounded-full mb-6 font-bold tracking-widest uppercase text-sm">
+                🇯🇵 Belajar Jepang itu Menyenangkan!
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">TanoshiiKeigo ✨</h1>
+            <p class="text-xl md:text-2xl font-medium opacity-95 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Kuasai bahasa sopan Jepang dengan warna yang cerah dan cara yang seru!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#materi" class="bg-amber-400 text-indigo-900 px-10 py-4 rounded-2xl font-bold hover:bg-white transition shadow-xl text-lg transform active:scale-95">
+                    Mulai Petualangan 🚀
+                </a>
+                <a href="#kuis" class="bg-indigo-900 text-white px-10 py-4 rounded-2xl font-bold hover:bg-indigo-800 transition shadow-xl text-lg transform active:scale-95">
+                    Coba Kuis 🎮
+                </a>
+            </div>
+        </div>
+        <!-- Ornamen Dekoratif -->
+        <div class="absolute bottom-0 left-0 p-10 hidden md:block floating-icon">
+            <i class="fas fa-fan text-white/20 text-8xl"></i>
+        </div>
+        <div class="absolute top-0 right-0 p-10 hidden md:block floating-icon" style="animation-delay: 1s;">
+            <i class="fas fa-paper-plane text-white/20 text-6xl"></i>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto px-4 py-16 space-y-32">
+
+        <!-- Konsep Dasar dengan Warna Pastel -->
+        <section id="pengenalan" class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-indigo-900">Kenalan dengan Keigo!</h2>
+                <p class="text-lg leading-relaxed text-slate-600">
+                    Dalam bahasa Jepang, <span class="text-rose-500 font-bold">Keigo</span> adalah cara kita menunjukkan rasa sayang dan hormat lewat kata-kata.
+                </p>
+                
+                <div class="grid gap-4">
+                    <div class="bg-soft-green p-6 rounded-3xl border-2 border-emerald-200 shadow-sm card-pop">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-emerald-500 text-white p-3 rounded-2xl"><i class="fas fa-crown"></i></div>
+                            <div>
+                                <h3 class="font-bold text-xl text-emerald-800">Sonkeigo</h3>
+                                <p class="text-emerald-700">Untuk memuji orang lain! (Atasan, Guru, Tamu)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-soft-blue p-6 rounded-3xl border-2 border-blue-200 shadow-sm card-pop">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-500 text-white p-3 rounded-2xl"><i class="fas fa-child"></i></div>
+                            <div>
+                                <h3 class="font-bold text-xl text-blue-800">Kenjougo</h3>
+                                <p class="text-blue-700">Untuk merendahkan diri kita dengan sopan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-amber-100 rounded-[3rem] p-10 flex items-center justify-center border-4 border-amber-300 shadow-inner">
+                    <!-- Ilustrasi Sederhana -->
+                    <div class="text-center">
+                        <i class="fas fa-handshake text-8xl text-amber-500 mb-6 floating-icon"></i>
+                        <div class="text-amber-800 font-bold text-xl">Harmoni dalam Berbicara</div>
+                    </div>
+                </div>
+                <div class="absolute -top-6 -right-6 bg-rose-500 text-white p-6 rounded-full shadow-lg font-bold rotate-12">
+                    Sugoi!
+                </div>
+            </div>
+        </section>
+
+        <!-- Contoh Kalimat Berwarna -->
+        <section id="contoh" class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-indigo-900 italic">Contoh Kalimat Keren</h2>
+                <p class="text-slate-500 mt-2">Lihat perbedaannya biar makin paham!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Sonkeigo Box -->
+                <div class="bg-emerald-50 p-8 rounded-[2rem] border-b-8 border-emerald-400 shadow-xl space-y-6">
+                    <h3 class="text-2xl font-bold text-emerald-700 flex items-center">
+                        <i class="fas fa-star mr-3"></i> Versi Sonkeigo
+                    </h3>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="text-xs font-bold text-emerald-500 uppercase tracking-widest">Aksi: Bertanya</div>
+                        <p class="jp-font text-2xl text-slate-800">お名前を<span class="text-emerald-600 font-bold underline">お聞きになります</span>か。</p>
+                        <p class="text-slate-500 italic">O-namae o okiki ni narimasu ka?</p>
+                        <p class="font-bold text-indigo-900">"Apakah Anda (orang lain) akan bertanya nama?"</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="text-xs font-bold text-emerald-500 uppercase tracking-widest">Aksi: Datang</div>
+                        <p class="jp-font text-2xl text-slate-800">先生が<span class="text-emerald-600 font-bold underline">いらっしゃいました</span>。</p>
+                        <p class="text-slate-500 italic">Sensei ga irasshaimashita.</p>
+                        <p class="font-bold text-indigo-900">"Guru sudah datang."</p>
+                    </div>
+                </div>
+
+                <!-- Kenjougo Box -->
+                <div class="bg-indigo-50 p-8 rounded-[2rem] border-b-8 border-indigo-400 shadow-xl space-y-6">
+                    <h3 class="text-2xl font-bold text-indigo-700 flex items-center">
+                        <i class="fas fa-heart mr-3"></i> Versi Kenjougo
+                    </h3>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="text-xs font-bold text-indigo-500 uppercase tracking-widest">Aksi: Mengatakan</div>
+                        <p class="jp-font text-2xl text-slate-800">田中と<span class="text-indigo-600 font-bold underline">申します</span>。</p>
+                        <p class="text-slate-500 italic">Tanaka to moushimasu.</p>
+                        <p class="font-bold text-indigo-900">"Nama saya Tanaka (menyebut diri sendiri)."</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="text-xs font-bold text-indigo-500 uppercase tracking-widest">Aksi: Bertemu</div>
+                        <p class="jp-font text-2xl text-slate-800">明日<span class="text-indigo-600 font-bold underline">お目にかかります</span>。</p>
+                        <p class="text-slate-500 italic">Ashita ome ni kakarimasu.</p>
+                        <p class="font-bold text-indigo-900">"Saya akan menemui Anda besok."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabel Rainbow -->
+        <section id="tabel">
+            <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border-4 border-indigo-100">
+                <div class="bg-indigo-600 text-white p-8 text-center">
+                    <h2 class="text-3xl font-bold">Kamus Pintar TanoshiiKeigo</h2>
+                    <p class="opacity-80 mt-2">Daftar kata kerja ajaib yang sering muncul!</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-indigo-50 border-b-2 border-indigo-100">
+                                <th class="p-6 text-indigo-900 font-bold">Kata Biasa</th>
+                                <th class="p-6 text-emerald-600 font-bold">Sonkeigo (Hormat)</th>
+                                <th class="p-6 text-rose-500 font-bold">Kenjougo (Rendah Hati)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-indigo-50">
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="p-6 text-center font-bold">食べる (Makan)</td>
+                                <td class="p-6 text-center jp-font text-xl text-emerald-600">めしあがる</td>
+                                <td class="p-6 text-center jp-font text-xl text-rose-500">いただく</td>
+                            </tr>
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="p-6 text-center font-bold">する (Melakukan)</td>
+                                <td class="p-6 text-center jp-font text-xl text-emerald-600">なさる</td>
+                                <td class="p-6 text-center jp-font text-xl text-rose-500">いたす</td>
+                            </tr>
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="p-6 text-center font-bold">見る (Melihat)</td>
+                                <td class="p-6 text-center jp-font text-xl text-emerald-600">ご覧になる</td>
+                                <td class="p-6 text-center jp-font text-xl text-rose-500">拝見する</td>
+                            </tr>
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="p-6 text-center font-bold">聞く (Mendengar)</td>
+                                <td class="p-6 text-center jp-font text-xl text-emerald-600">お聞きになる</td>
+                                <td class="p-6 text-center jp-font text-xl text-rose-500">伺う</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kuis Seru -->
+        <section id="kuis" class="bg-white p-10 rounded-[3rem] shadow-2xl border-4 border-dashed border-rose-300 relative overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-40 h-40 bg-rose-100 rounded-full blur-3xl"></div>
+            <div class="max-w-2xl mx-auto relative z-10 text-center">
+                <div class="inline-block bg-rose-500 text-white px-6 py-2 rounded-full font-bold mb-6 shadow-md rotate-2">
+                    TANTANGAN KEIGO! 🎮
+                </div>
+                <h2 class="text-3xl font-bold text-indigo-900 mb-8">Pilih Jawaban yang Paling Sopan!</h2>
+                
+                <div class="bg-indigo-50 p-8 rounded-3xl mb-8">
+                    <p class="text-xl font-bold text-indigo-900 mb-6 italic">"Jika kamu (bawahan) ingin memberitahu namamu kepada klien..."</p>
+                    <div class="grid gap-4">
+                        <button onclick="playQuiz(this, false)" class="bg-white py-4 px-6 rounded-2xl border-2 border-indigo-200 hover:border-rose-500 hover:bg-rose-50 transition font-bold text-indigo-900 shadow-sm">
+                            A. Nama wa Tanaka desu.
+                        </button>
+                        <button onclick="playQuiz(this, true)" class="bg-white py-4 px-6 rounded-2xl border-2 border-indigo-200 hover:border-emerald-500 hover:bg-emerald-50 transition font-bold text-indigo-900 shadow-sm">
+                            B. Tanaka to moushimasu.
+                        </button>
+                        <button onclick="playQuiz(this, false)" class="bg-white py-4 px-6 rounded-2xl border-2 border-indigo-200 hover:border-rose-500 hover:bg-rose-50 transition font-bold text-indigo-900 shadow-sm">
+                            C. Tanaka sensei desu.
+                        </button>
+                    </div>
+                </div>
+
+                <div id="quiz-feedback" class="hidden animate-bounce text-2xl font-bold py-4"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Ceria -->
+    <footer class="bg-indigo-900 text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center text-center md:text-left">
+            <div>
+                <span class="text-3xl font-bold">Tanoshii<span class="text-amber-400">Keigo</span></span>
+                <p class="text-indigo-200 mt-4 italic text-lg">Belajar bahasa Jepang bukan lagi beban, tapi petualangan yang menyenangkan! ✨</p>
+            </div>
+            <div class="flex justify-center md:justify-end space-x-6 text-3xl">
+                <a href="#" class="hover:text-rose-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-rose-400 transition"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="hover:text-rose-400 transition"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="text-center mt-16 text-indigo-400 text-sm border-t border-indigo-800 pt-8">
+            &copy; 2024 TanoshiiKeigo. Ayo semangat belajarnya, Ganbatte! 🇯🇵
+        </div>
+    </footer>
+
+    <script>
+        function playQuiz(button, isCorrect) {
+            const feedback = document.getElementById('quiz-feedback');
+            const buttons = button.parentElement.querySelectorAll('button');
+            
+            buttons.forEach(b => b.disabled = true);
+            feedback.classList.remove('hidden', 'text-emerald-500', 'text-rose-500');
+
+            if (isCorrect) {
+                button.classList.add('bg-emerald-500', 'text-white', 'border-emerald-500');
+                feedback.innerText = "YATTA! BENAR SEKALI! 🎉";
+                feedback.classList.add('text-emerald-500');
+            } else {
+                button.classList.add('bg-rose-500', 'text-white', 'border-rose-500');
+                feedback.innerText = "YAH, SALAH DIKIT! COBA LAGI YA! 💪";
+                feedback.classList.add('text-rose-500');
+            }
+        }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TanoshiiKeigo - Belajar Bahasa Jepang Seru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Quicksand:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .jp-font {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .rainbow-gradient {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+        }
+
+        .card-pop:hover {
+            transform: scale(1.03) rotate(-1deg);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .bg-soft-yellow { background-color: #fef3c7; }
+        .bg-soft-blue { background-color: #dbeafe; }
+        .bg-soft-green { background-color: #d1fae5; }
+        .bg-soft-purple { background-color: #f3e8ff; }
+
+        .floating-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-indigo-50 text-slate-800">
+
+    <!-- Navigasi Ceria -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg border-b-4 border-amber-400">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-amber-400 text-white p-2 rounded-2xl shadow-md rotate-12">
+                    <i class="fas fa-laugh-beam text-2xl"></i>
+                </div>
+                <span class="font-bold text-2xl tracking-tighter text-indigo-900">Tanoshii<span class="text-rose-500">Keigo</span></span>
+            </div>
+            <div class="hidden md:flex space-x-6 font-bold text-indigo-900">
+                <a href="#pengenalan" class="hover:text-rose-500 transition">Halo!</a>
+                <a href="#materi" class="hover:text-rose-500 transition">Materi</a>
+                <a href="#contoh" class="hover:text-rose-500 transition">Contoh</a>
+                <a href="#tabel" class="hover:text-rose-500 transition">Daftar Kata</a>
+                <a href="#kuis" class="bg-amber-400 text-white px-4 py-1 rounded-full hover:bg-amber-500 transition">Main Kuis!</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Warna-Warni -->
+    <header class="rainbow-gradient text-white py-24 px-4 relative">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-block bg-white/20 backdrop-blur-md px-4 py-2 rounded-full mb-6 font-bold tracking-widest uppercase text-sm">
+                🇯🇵 Belajar Jepang itu Menyenangkan!
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">TanoshiiKeigo ✨</h1>
+            <p class="text-xl md:text-2xl font-medium opacity-95 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Kuasai bahasa sopan Jepang dengan warna yang cerah dan cara yang seru!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#materi" class="bg-amber-400 text-indigo-900 px-10 py-4 rounded-2xl font-bold hover:bg-white transition shadow-xl text-lg transform active:scale-95">
+                    Mulai Petualangan 🚀
+                </a>
+                <a href="#kuis" class="bg-indigo-900 text-white px-10 py-4 rounded-2xl font-bold hover:bg-indigo-800 transition shadow-xl text-lg transform active:scale-95">
+                    Coba Kuis 🎮
+                </a>
+            </div>
+        </div>
+        <!-- Ornamen Dekoratif -->
+        <div class="absolute bottom-0 left-0 p-10 hidden md:block floating-icon">
+            <i class="fas fa-fan text-white/20 text-8xl"></i>
+        </div>
+        <div class="absolute top-0 right-0 p-10 hidden md:block floating-icon" style="animation-delay: 1s;">
+            <i class="fas fa-paper-plane text-white/20 text-6xl"></i>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-6xl mx-auto px-4 py-16 space-y-32">
+
+        <!-- Konsep Dasar dengan Warna Pastel -->
+        <section id="pengenalan" class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-indigo-900">Kenalan dengan Keigo!</h2>
+                <p class="text-lg leading-relaxed text-slate-600">
+                    Dalam bahasa Jepang, <span class="text-rose-500 font-bold">Keigo</span> adalah cara kita menunjukkan rasa sayang dan hormat lewat kata-kata.
+                </p>
+                
+                <div class="grid gap-4">
+                    <div class="bg-soft-green p-6 rounded-3xl border-2 border-emerald-200 shadow-sm card-pop">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-emerald-500 text-white p-3 rounded-2xl"><i class="fas fa-crown"></i></div>
+                            <div>
+                                <h3 class="font-bold text-xl text-emerald-800">Sonkeigo</h3>
+                                <p class="text-emerald-700">Untuk memuji orang lain! (Atasan, Guru, Tamu)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-soft-blue p-6 rounded-3xl border-2 border-blue-200 shadow-sm card-pop">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-500 text-white p-3 rounded-2xl"><i class="fas fa-child"></i></div>
+                            <div>
+                                <h3 class="font-bold text-xl text-blue-800">Kenjougo</h3>
+                                <p class="text-blue-700">Untuk merendahkan diri kita dengan sopan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-amber-100 rounded-[3rem] p-10 flex items-center justify-center border-4 border-amber-300 shadow-inner">
+                    <!-- Ilustrasi Sederhana -->
+                    <div class="text-center">
+                        <i class="fas fa-handshake text-8xl text-amber-500 mb-6 floating-icon"></i>
+                        <div class="text-amber-800 font-bold text-xl">Harmoni dalam Berbicara</div>
+                    </div>
+                </div>
+                <div class="absolute -top-6 -right-6 bg-rose-500 text-white p-6 rounded-full shadow-lg font-bold rotate-12">
+                    Sugoi!
+                </div>
+            </div>
+        </section>
+
+        <!-- Contoh Kalimat Berwarna -->
+        <section id="contoh" class="space-y-12">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-indigo-900 italic">Contoh Kalimat Keren</h2>
+                <p class="text-slate-500 mt-2">Lihat perbedaannya biar makin paham!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Sonkeigo Box -->
+                <div class="bg-emerald-50 p-8 rounded-[2rem] border-b-8 border-emerald-400 shadow-xl space-y-6">
+                    <h3 class="text-2xl font-bold text-emerald-700 flex items-center">
+                        <i class="fas fa-star mr-3"></i> Versi Sonkeigo
+                    </h3>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="text-xs font-bold text-emerald-500 uppercase tracking-widest">Aksi: Bertanya</div>
+                        <p class="jp-font text-2xl text-slate-800">お名前を<span class="text-emerald-600 font-bold underline">お聞きになります</span>か。</p>
+                        <p class="text-slate-500 italic">O-namae o okiki ni narimasu ka?</p>
+                        <p class="font-bold text-indigo-900">"Apakah Anda (orang lain) akan bertanya nama?"</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="text-xs font-bold text-emerald-500 uppercase tracking-widest">Aksi: Datang</div>
+                        <p class="jp-font text-2xl text-slate-800">先生が<span class="text-emerald-600 font-bold underline">いらっしゃいました</span>。</p>
+                        <p class="text-slate-500 italic">Sensei ga irasshaimashita.</p>
+                        <p class="font-bold text-indigo-900">"Guru sudah datang."</p>
+                    </div>
+                </div>
+
+                <!-- Kenjougo Box -->
+                <div class="bg-indigo-50 p-8 rounded-[2rem] border-b-8 border-indigo-400 shadow-xl space-y-6">
+                    <h3 class="text-2xl font-bold text-indigo-700 flex items-center">
+                        <i class="fas fa-heart mr-3"></i> Versi Kenjougo
+                    </h3>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="text-xs font-bold text-indigo-500 uppercase tracking-widest">Aksi: Mengatakan</div>
+                        <p class="jp-font text-2xl text-slate-800">田中と<span class="text-indigo-600 font-bold underline">申します</span>。</p>
+                        <p class="text-slate-500 italic">Tanaka to moushimasu.</p>
+                        <p class="font-bold text-indigo-900">"Nama saya Tanaka (menyebut diri sendiri)."</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="text-xs font-bold text-indigo-500 uppercase tracking-widest">Aksi: Bertemu</div>
+                        <p class="jp-font text-2xl text-slate-800">明日<span class="text-indigo-600 font-bold underline">お目にかかります</span>。</p>
+                        <p class="text-slate-500 italic">Ashita ome ni kakarimasu.</p>
+                        <p class="font-bold text-indigo-900">"Saya akan menemui Anda besok."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabel Rainbow -->
+        <section id="tabel">
+            <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border-4 border-indigo-100">
+                <div class="bg-indigo-600 text-white p-8 text-center">
+                    <h2 class="text-3xl font-bold">Kamus Pintar TanoshiiKeigo</h2>
+                    <p class="opacity-80 mt-2">Daftar kata kerja ajaib yang sering muncul!</p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-indigo-50 border-b-2 border-indigo-100">
+                                <th class="p-6 text-indigo-900 font-bold">Kata Biasa</th>
+                                <th class="p-6 text-emerald-600 font-bold">Sonkeigo (Hormat)</th>
+                                <th class="p-6 text-rose-500 font-bold">Kenjougo (Rendah Hati)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-indigo-50">
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="p-6 text-center font-bold">食べる (Makan)</td>
+                                <td class="p-6 text-center jp-font text-xl text-emerald-600">めしあがる</td>
+                                <td class="p-6 text-center jp-font text-xl text-rose-500">いただく</td>
+                            </tr>
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="p-6 text-center font-bold">する (Melakukan)</td>
+                                <td class="p-6 text-center jp-font text-xl text-emerald-600">なさる</td>
+                                <td class="p-6 text-center jp-font text-xl text-rose-500">いたす</td>
+                            </tr>
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="p-6 text-center font-bold">見る (Melihat)</td>
+                                <td class="p-6 text-center jp-font text-xl text-emerald-600">ご覧になる</td>
+                                <td class="p-6 text-center jp-font text-xl text-rose-500">拝見する</td>
+                            </tr>
+                            <tr class="hover:bg-amber-50 transition">
+                                <td class="p-6 text-center font-bold">聞く (Mendengar)</td>
+                                <td class="p-6 text-center jp-font text-xl text-emerald-600">お聞きになる</td>
+                                <td class="p-6 text-center jp-font text-xl text-rose-500">伺う</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kuis Seru -->
+        <section id="kuis" class="bg-white p-10 rounded-[3rem] shadow-2xl border-4 border-dashed border-rose-300 relative overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-40 h-40 bg-rose-100 rounded-full blur-3xl"></div>
+            <div class="max-w-2xl mx-auto relative z-10 text-center">
+                <div class="inline-block bg-rose-500 text-white px-6 py-2 rounded-full font-bold mb-6 shadow-md rotate-2">
+                    TANTANGAN KEIGO! 🎮
+                </div>
+                <h2 class="text-3xl font-bold text-indigo-900 mb-8">Pilih Jawaban yang Paling Sopan!</h2>
+                
+                <div class="bg-indigo-50 p-8 rounded-3xl mb-8">
+                    <p class="text-xl font-bold text-indigo-900 mb-6 italic">"Jika kamu (bawahan) ingin memberitahu namamu kepada klien..."</p>
+                    <div class="grid gap-4">
+                        <button onclick="playQuiz(this, false)" class="bg-white py-4 px-6 rounded-2xl border-2 border-indigo-200 hover:border-rose-500 hover:bg-rose-50 transition font-bold text-indigo-900 shadow-sm">
+                            A. Nama wa Tanaka desu.
+                        </button>
+                        <button onclick="playQuiz(this, true)" class="bg-white py-4 px-6 rounded-2xl border-2 border-indigo-200 hover:border-emerald-500 hover:bg-emerald-50 transition font-bold text-indigo-900 shadow-sm">
+                            B. Tanaka to moushimasu.
+                        </button>
+                        <button onclick="playQuiz(this, false)" class="bg-white py-4 px-6 rounded-2xl border-2 border-indigo-200 hover:border-rose-500 hover:bg-rose-50 transition font-bold text-indigo-900 shadow-sm">
+                            C. Tanaka sensei desu.
+                        </button>
+                    </div>
+                </div>
+
+                <div id="quiz-feedback" class="hidden animate-bounce text-2xl font-bold py-4"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Ceria -->
+    <footer class="bg-indigo-900 text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center text-center md:text-left">
+            <div>
+                <span class="text-3xl font-bold">Tanoshii<span class="text-amber-400">Keigo</span></span>
+                <p class="text-indigo-200 mt-4 italic text-lg">Belajar bahasa Jepang bukan lagi beban, tapi petualangan yang menyenangkan! ✨</p>
+            </div>
+            <div class="flex justify-center md:justify-end space-x-6 text-3xl">
+                <a href="#" class="hover:text-rose-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-rose-400 transition"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="hover:text-rose-400 transition"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="text-center mt-16 text-indigo-400 text-sm border-t border-indigo-800 pt-8">
+            &copy; 2024 TanoshiiKeigo. Ayo semangat belajarnya, Ganbatte! 🇯🇵
+        </div>
+    </footer>
+
+    <script>
+        function playQuiz(button, isCorrect) {
+            const feedback = document.getElementById('quiz-feedback');
+            const buttons = button.parentElement.querySelectorAll('button');
+            
+            buttons.forEach(b => b.disabled = true);
+            feedback.classList.remove('hidden', 'text-emerald-500', 'text-rose-500');
+
+            if (isCorrect) {
+                button.classList.add('bg-emerald-500', 'text-white', 'border-emerald-500');
+                feedback.innerText = "YATTA! BENAR SEKALI! 🎉";
+                feedback.classList.add('text-emerald-500');
+            } else {
+                button.classList.add('bg-rose-500', 'text-white', 'border-rose-500');
+                feedback.innerText = "YAH, SALAH DIKIT! COBA LAGI YA! 💪";
+                feedback.classList.add('text-rose-500');
+            }
+        }
+    </script>
+</body>
+</html>
